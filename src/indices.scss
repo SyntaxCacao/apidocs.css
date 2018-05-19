@@ -1,0 +1,59 @@
+.indexHeader {
+  float: right;
+
+  a {
+    color: #fff;
+
+    &:hover, &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.indexHeader,
+.indexContainer h2,
+.bar {
+  font-size: 14px;
+  margin: 0;
+  padding: 8px;
+}
+
+.indexContainer h2,
+.bar {
+  background-color: $bg-blue;
+  color: #fff;
+  font-weight: 700;
+}
+
+.bar a {
+  color: inherit;
+}
+
+.bar + .indexContainer h2 {
+  background-color: #fff;
+  color: $heading;
+  padding-bottom: 0;
+}
+
+.indexContainer ul {
+  font-size: 13px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.indexContainer li {
+  padding: 0 8px;
+}
+
+.indexContainer + p {
+  display: none;
+}
+
+.bar a,
+.indexContainer li a {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

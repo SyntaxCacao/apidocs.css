@@ -1,0 +1,88 @@
+noscript div {
+  background-color: #c60000;
+  color: #fff;
+  font-weight: 700;
+  padding: 4px 16px;
+}
+
+.aboutLanguage {
+  // TODO
+  font-size: 11px;
+  float: right;
+  margin-top: -9px;
+  padding: 0 21px;
+  z-index: 200;
+}
+
+.skipNav {
+  display: none;
+}
+
+.navList {
+  display: inline-block;
+  list-style: none;
+  padding: 0 8px;
+
+  li {
+    display: inline-block;
+    padding: 4px 8px;
+  }
+}
+
+.bottomNav,
+.topNav {
+  background-color: $bg-blue;
+  color: #fff;
+  padding: 8px 0;
+
+  a:link, a:visited {
+    color: inherit;
+  }
+
+  a:focus, a:hover {
+    color: $link-orange;
+  }
+}
+
+// current bottomNav/topNav li
+.navBarCell1Rev {
+  background-color: $bg-orange;
+  border-radius: 1px;
+  color: $text;
+}
+
+// sticky topNav
+/*
+.topNav + .subNav {
+    margin-top: 41px;
+}
+.topNav {
+    position: fixed;
+    width: 100%;
+    display: block;
+    top: 0;
+}
+*/
+
+.subNav, .legalCopy {
+  background-color: $bg-lightblue;
+}
+
+.bottomNav + .subNav {
+  display: none;
+}
+
+.legalCopy {
+  margin: 0;
+  padding: 8px 16px;
+
+  small {
+    font-size: inherit;
+  }
+}
+
+.legalCopy::after {
+  content: "Themed by SyntaxCacao.";
+//float: right;
+  margin-left: 27px;
+}
