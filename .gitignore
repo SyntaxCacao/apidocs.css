@@ -1,0 +1,11 @@
+# Build files / test dir
+/docs/
+/apidocs.css
+/stylesheet.css
+
+# Node
+/.sass-cache/
+/node_modules/
+
+# OS generated
+.DS_STORE
