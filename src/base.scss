@@ -1,5 +1,3 @@
-// Overall document style
-
 * {
   box-sizing: border-box;
 }
@@ -10,7 +8,7 @@ body, ul, ol {
 }
 
 body {
-  background-color: #fff;
+  background-color: $bg-white;
   color: $text;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -18,13 +16,9 @@ body {
 
 pre, code, kbd {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-
-  a {
-    font-weight: 700;
-  }
 }
 
-p {
+dl, p, pre {
   margin: 8px 0;
 }
 
@@ -37,9 +31,16 @@ a:hover, a:focus {
   color: $link-orange;
 }
 
+dd {
+  margin-left: 40px;
+}
+
 h1, h2, h3,
 h4, h5, h6,
-caption, th {
+caption, th, dt,
+code a, a code,
+pre a, a pre,
+.typeNameLabel {
   font-weight: 700;
 }
 

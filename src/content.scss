@@ -3,9 +3,16 @@
   margin-right: 16px;
 }
 
+.subTitle {
+  margin-top: 16px;
+}
+
+.subTitle + .title {
+  margin-top: 4px;
+}
+
 .title {
   border-bottom: 1px solid $bg-lightblue;
-  color: darken($bg-blue, 20%);
   padding-bottom: 2px;
   margin-bottom: 20px;
 }
@@ -14,93 +21,24 @@
   margin-top: 16px;
 }
 
-table {
-  width: 100%;
+.inheritance {
+  list-style: none;
 }
 
-.colFirst {
-  width: 25%;
+li > .inheritance {
+  padding-left: 27px;
 }
 
-.overviewSummary, .typeSummary {
-  .colFirst {
-    font-size: 13px;
-    font-weight: 700;
+.blockList {
+  list-style: none;
+
+  > hr, > hr + br {
+    display: none;
   }
 }
 
-tbody:first-of-type tr:first-child th:last-child,
-tbody:first-of-type tr:first-child td:last-child {
-    border-top-right-radius: 2px;
-}
-
-tbody:last-of-type td:last-child, {
-    border-bottom-right-radius: 2px;
-}
-
-tbody:last-of-type tr:last-of-type td:first-child, {
-    border-bottom-left-radius: 2px;
-}
-
-caption {
-  display: inline-block;
-  position: relative;
-}
-
-caption > span {
-  background-color: $bg-orange;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  display: inline-block;
-  padding: 8px;
-}
-
-caption > span {
-  margin-left: 4px;
-
-  &:first-child {
-    background-color: $bg-orange;
-    margin-left: 0;
+.description {
+  .block {
+    margin: 8px 0;
   }
-}
-
-.activeTableTab {
-  background-color: $bg-orange;
-}
-
-.tableTab {
-  background-color: $bg-blue;
-  color: #fff;
-}
-
-caption, th {
-  text-align: left;
-}
-
-th {
-  background-color: $bg-lightblue;
-}
-
-.rowColor {
-  background-color: $bg-table-striped;
-}
-
-td, th {
-  padding: 8px;
-}
-
-td:first-of-type {
-  border-left: 1px solid $bg-table-striped;
-}
-
-td:last-of-type {
-  border-right: 1px solid $bg-table-striped;
-}
-
-.altColor:last-child td {
-  border-bottom: 1px solid $bg-table-striped;
-}
-
-.tabEnd {
-  display: none;
 }
