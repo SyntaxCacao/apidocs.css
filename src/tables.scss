@@ -24,11 +24,11 @@ tbody:first-of-type tr:first-child td:last-child {
     border-top-right-radius: 2px;
 }
 
-tbody:last-of-type td:last-child, {
+tbody:last-of-type tr:last-child td:last-child {
     border-bottom-right-radius: 2px;
 }
 
-tbody:last-of-type tr:last-of-type td:first-child, {
+tbody:last-of-type tr:last-of-type td:first-child {
     border-bottom-left-radius: 2px;
 }
 
@@ -75,12 +75,12 @@ th {
   background-color: darken($bg-white, 5%);
 }
 
-.rowColor {
+.rowColor td {
   background-color: $bg-table-striped;
+}
 
-  &:hover td {
-    background-color: $bg-lightblue;
-  }
+.rowColor:hover td {
+  background-color: $bg-lightblue;
 }
 
 td, th {
