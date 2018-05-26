@@ -62,7 +62,7 @@ th {
 }
 
 .altColor:hover td {
-  background-color: darken($bg-white, 5%);
+  background-color: lighten($bg-lightblue, 8%);
 }
 
 .rowColor td {
