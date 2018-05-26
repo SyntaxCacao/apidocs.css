@@ -21,34 +21,24 @@ table {
 
 tbody:first-of-type tr:first-child th:last-child,
 tbody:first-of-type tr:first-child td:last-child {
-    border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 tbody:last-of-type tr:last-child td:last-child {
-    border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 tbody:last-of-type tr:last-of-type td:first-child {
-    border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
 
-caption {
+caption > span {
+  background-color: $bg-orange;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
   display: inline-block;
-  position: relative;
-
-  > span {
-    background-color: $bg-orange;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    display: inline-block;
-    margin-left: 4px;
-    padding: 8px;
-
-    &:first-child {
-      background-color: $bg-orange;
-      margin-left: 0;
-    }
-  }
+  margin-right: 4px;
+  padding: 8px;
 }
 
 .tableTab {
