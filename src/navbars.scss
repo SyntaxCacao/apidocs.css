@@ -49,11 +49,12 @@ noscript div {
 .bottomNav,
 .topNav {
   background-color: $bg-blue;
-  color: #fff;
+  color: #eaeaea;
+  cursor: default;
   padding: 8px 0;
 
   a:link, a:visited {
-    color: inherit;
+    color: #fff;
   }
 
   a:focus, a:hover {
