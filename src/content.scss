@@ -23,6 +23,15 @@
   margin-top: 16px;
 }
 
+.horizontal {
+  font-size: 90%;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
+
 .inheritance {
   list-style: none;
 }
